@@ -74,7 +74,6 @@ public class TextProcessor {
     public static boolean sentenceContainsWord(Sentence sentence, String wordToFind) {
         for (SentenceMember member : sentence.getMembers()) {
 
-            // Нас цікавлять тільки об'єкти типу Word
             if (member instanceof Word) {
                 Word word = (Word) member;
 
@@ -92,4 +91,5 @@ public class TextProcessor {
     public static String replaceMultipleWhitespace(String input) {
         return input.trim().replaceAll("\\s+", " ");
     }
+
 }
